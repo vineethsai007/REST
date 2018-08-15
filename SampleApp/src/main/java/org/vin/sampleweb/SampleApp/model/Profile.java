@@ -5,7 +5,7 @@ package org.vin.sampleweb.SampleApp.model;
 	import javax.xml.bind.annotation.XmlRootElement;
 
 	@XmlRootElement
-	public class Profiles {
+	public class Profile {
 	
 		
 	 private long id;
@@ -15,13 +15,13 @@ package org.vin.sampleweb.SampleApp.model;
 	 private Date created;
 	 
 	 
-	 public Profiles() {
+	 public Profile() {
 			
 		}  
 		
 	
 
-	public Profiles(long id, String profileName, String firstName, String lastName) {
+	public Profile(long id, String profileName, String firstName, String lastName) {
 		super();
 		this.id = id;
 		this.profileName = profileName;
