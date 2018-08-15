@@ -13,10 +13,17 @@ import org.vin.sampleweb.SampleApp.model.Message;
 public class MessageService {
 	
 	private Map<Long, Message> messages = DatabaseClass.getMessages();
-	public MessageService() {
+	/*public  MessageService() {
 		messages.put(1L, new Message(1,"Hello World","vineeth"));
 		messages.put(2L, new Message(2,"Jersey sucks","vinz"));
-	}
+	}*/
+	public MessageService() {
+		  if (messages.size()==0) 
+		  {
+		   messages.put(1L,new Message(1L,"Hello World","vineeth"));
+		   messages.put(2L,new Message(2L,"Hello Jersey","vinz"));
+		  }
+		  }
 	
 	public List<Message> getAllMessages(){
 		
